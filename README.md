@@ -1,5 +1,5 @@
 # mIsTerquickfix
-Joshua Brock-Anderson
+Joshua Brock-Anderson, final project-
 Mr.QuickFix
 
 My code is a simple input based simulation involving troubleshooting common home network issues.
