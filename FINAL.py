@@ -45,14 +45,14 @@ response1 = get_response_1()
 def get_survey_results():
     while True:
         try:
-            satisfaction = int(input("On a scale of 1-5 with 5 being great & 1 being poor, how would you rate your experience with Mr.QuickFix?-> "))
+            satisfaction = int(input("On a scale of 1-5 with 5 being great & 1 being not great, how would you rate your experience with Mr.QuickFix?-> "))
             if 1 <= satisfaction <= 5:  
                 print(f"Thank you for your participation! Your rating: {satisfaction}")
                 sys.exit()
             else:
-                print("Please only enter a number between 1 and 5.")  
+                print("Please only enter a number between 1 & 5.")  
         except ValueError:  
-            print("Please only enter a valid number between 1 and 5.")
+            print("Please only enter a valid number between 1 & 5.")
 if response1 == "yes":
     print("Okay! I  am glad to hear it was successfull, please partake in the following brief survey. Until next time "+ name + "!")
     print("\nSURVEY")
@@ -81,9 +81,9 @@ elif response1 == "no":
                 print(f"Thank you for your participation! Your rating: {satisfaction1}")
                 sys.exit()
             else:
-                print("Please enter a number between 1 and 5.")  
+                print("Please enter a number between 1 & 5.")  
         except ValueError:  
-            print("Please enter a number between 1 and 5.")
+            print("Please enter a number between 1 & 5.")
         if responseb == "no":
             print("This issue is beyond my capabilites, please reachout to your closest IT professional.")
             sys.exit()
